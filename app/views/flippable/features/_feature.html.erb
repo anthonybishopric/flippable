@@ -1,0 +1,21 @@
+<div class="post">
+<h2><%= feature.feature_name%></h2>
+
+<h3>
+
+<% if feature.enabled?%>
+	<div class="enabled-feature">enabled</div>
+<% else%>
+	<div class="disabled-feature">disabled</div>
+<% end%>
+
+</h3>
+
+<%= form_for feature do |form|%>
+	
+	Enabled?
+	<%= form.check_box :enabled%>
+	<%= form.submit%>
+	
+<%end%>
+</div>

@@ -7,8 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="wrapper">
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="logo">
+					<h1>Feature Flippers</h1>
+				</div>
+			</div>
+		</div>
+		<div id="page">
+			<div id="page-bgtop">
+				<div id="page-bgbtm">
+					<div id="content">
+						<%= yield %>
+					</div>
+					<div class="sidebar">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+					
 
-<%= yield %>
 
 </body>
 </html>

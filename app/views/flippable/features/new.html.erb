@@ -1,0 +1,13 @@
+<h1>Create a new feature</h1>
+
+<%= form_for @feature do |form|%>
+	
+	<label for="feature_name">Feature Name</label>
+	<%= form.text_field :feature_name, :id => "feature_name"%>
+	<br/>
+	<label for="enabled">Enabled?</label>
+	<%= form.check_box :enabled, :id => "enabled" %>
+	
+	<%= form.submit%>
+	
+<% end%>

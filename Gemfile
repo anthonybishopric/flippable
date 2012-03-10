@@ -10,3 +10,9 @@ gem 'sqlite3'
 gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'redis'
+
+group 'test' do
+	gem 'shoulda-context'
+end
